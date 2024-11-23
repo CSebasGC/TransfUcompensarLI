@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Id Funcionario</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!--ENCABEZADO DEL MENU-->
+    <div class = "contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Sebastian</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">FUNCIONARIO</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portafolio" onclick="seleccionar()">FUNCIONES</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+    <!--SECCION DE INICIO-->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/hero.png" alt="">
+            </div>
+            <h1>CARLOS SEBASTIAN GÓMEZ CARRILLO</h1>
+            <h2>Administrador Público - Experto Gestión Pública</h2>
+            <div class="redes">
+                <a href="https://www.facebook.com" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.twitter.com" title="twitter" ><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.skype.com" title="skype"><i class="fa-brands fa-skype"></i></a>
+                <a href="https://www.linkedin.com" title="linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://www.rss.com" title="rss"><i class="fa-solid fa-rss"></i></a>    
+            </div>
+        </div>
+    </section>
+
+    <!--SECCION FUNCIONARIO-->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Perfil Profesional del Funcionario</h2>
+            <p><span>Hola, Soy Sebastián Gómez.</span> Administrador Público Especi alizado y Estudiante de Ingeniería de Software: Transformando la Gestión Pública con Tecnología
+                Soy un Administrador Público especializado en Gerencia Informáticab y Magister en Sistemas de Gestión, con un enfoque innovador y estratégico.</p>
+
+                <div class="fila">
+                    <!--Datos Personales-->
+                    <div class="col">
+                        <h3>Datos Personales</h3>
+                        <ul>
+                            <li>
+                                <strong>Cumpleaños</strong>
+                                14-02-1985
+                            </li>
+                            <li>
+                                <strong>Teléfono</strong>
+                                +57 324 681 5814
+                            </li>
+                            <li>
+                                <strong>Email</strong>
+                                sebastiangomezc@ucompensar.edu.co
+                            </li>
+                            <li>
+                                <strong>Website</strong>
+                                www.estudianteingenierasoft.com.co
+                            </li>
+                            <li>
+                                <strong>Dirección</strong>
+                                Cra 19 # 32-45 Blv. Niza, Manizales
+                            </li>
+                            <li>
+                                <strong>Cargo</strong>
+                                <span>Asesor en Gestión Pública</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!--Intereses-->
+                    <div class="col">
+                        <h3>Intereses</h3>
+                        <div class="contenedor-intereses">
+                            <div class="interes">
+                                <i class="fa-solid fa-gamepad"></i>
+                                <span>VIDEOJUEGOS</span>                                      
+                            </div>
+                            <div class="interes">
+                                <i class="fa-solid fa-headphones"></i>
+                                <span>MUSICA</span>                                      
+                            </div>
+                            <div class="interes">
+                                <i class="fa-solid fa-microchip"></i>
+                                <span>TECNOLOGIA</span>                                      
+                            </div>
+                            <div class="interes">
+                                <i class="fa-brands fa-windows"></i>
+                                <span>WINDOWS</span>                                      
+                            </div>
+                             <div class="interes">
+                                <i class="fa-solid fa-book"></i>
+                                <span>LIBROS</span>                                      
+                            </div>
+                            <div class="interes">
+                                <i class="fa-solid fa-paw"></i>
+                                <span>MASCOTAS</span>                                      
+                            </div>
+                            <div class="interes">
+                                <i class="fa-solid fa-car"></i>
+                                <span>AUTOS</span>                                      
+                            </div>
+                            <div class="interes">
+                                <i class="fa-solid fa-plane"></i>
+                                <span>VIAJES</span>                                      
+                            </div>
+
+                        </div>
+                    </div>    
+                </div>
+                <button>
+                    Descargar CV <i class="fa-solid fa-download"></i>
+                    <span class="overlay"></span>
+                </button>
+                
+        </div>
+    </section>
+
+    <!--SECCION DE SKILLS-->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!--Habilidades Tecnicas-->
+                <div class="col">
+                    <h3>Habilidades Técnicas</h3>
+                    <div class="skill">
+                        <span>Modelos Administrativos Públicos</span><!--javascript-->
+                        <div class="barra-skill">
+                            <div class="progreso"> <!--aca colocar mi habilidad-->
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Planeación Estratégica</span><!--HTML & CSS-->
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Proyectos e Investigación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Sistemas de Gestión</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Gobierno Digital</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Habilidades Profesionales-->
+                <div class="col">
+                    <h3>Habilidades Profesionales</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Autogestión</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!--SECCION DE CURRICULUM-->
+    <section class="curriculum" id="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Administración Pública</h4>
+                        <span class="casa">ESAP</span>
+                        <span class="fecha">2009-2014</span>
+                        <p>Administrador Público profesional en condiciones de liderar procesos 
+                        administrativos tendientes al fortalecimiento de instituciones y de organizaciones 
+                        pertenecientes al ámbito de lo público.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Especialista Gerencia Informática</h4>
+                        <span class="casa">Corporacion Universitaria Remington</span>
+                        <span class="fecha">2014-2015</span>
+                        <p>El especialista en Gerencia Informática es un profesional capacitado para diseñar y gestionar proyectos 
+                            tecnológicos y estratégicos que incluyen aspectos éticos en el tratamiento de la información del estado.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Magister Sistemas de Gestión</h4>
+                        <span class="casa">Universidad Católica de Manizales</span>
+                        <span class="fecha">2016-2018</span>
+                        <p>Magister en capacidad de diseñar, implementar, evaluar y mejorar sistemas integrados de gestión en las 
+                            organizaciones; proponer soluciones para lograr una gestión integral eficaz en las organizaciones.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia Laboral</h3>
+                    <div class="item der">
+                        <h4>Jefe de Planeación</h4>
+                        <span class="casa">Hospital General San Isidro</span>
+                        <span class="fecha">2015-2021</span>
+                        <p>LLevar a cabo actividades de planeación estratégica articuladas con modelo administrativos</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Jefe de Proyectos e Innovación</h4>
+                        <span class="casa">SENA</span>
+                        <span class="fecha">2022-2023</span>
+                        <p>Liderar estrategias de proyectos de innovación en los diferentes servicios de SENNOVALAB 
+                            y sus lineas de investigación en la Regional Caldas</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Jefe de Calidad y Modelos Administrativos</h4>
+                        <span class="casa">Alcaldia de Manizales</span>
+                        <span class="fecha">2024-Actual</span>
+                        <p>Liderar estrategias en el despliegue de acciones para las diferentes secretarias de la entidad y 
+                            articularlas con planes de desarrollo y modelos administrativos.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--SECCION DE FUNCIONES-->
+    <section class="portafolio" id="portafolio">
+        <div class="contenido-seccion">
+            <h2>Funciones del Cargo</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/p1.png" alt="">
+                    <div class="overlay">
+                        <h3>Dashboard</h3>
+                        <p>Planes e Informes</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p2.png" alt="">
+                    <div class="overlay">
+                        <h3>MIPG</h3>
+                        <p>Modelos Administrativos</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p3.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Asesoría y Consultoría</h3>
+                        <p>Temáticas Administrativas</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p4.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Sistemas de Gestión de Calidad</h3>
+                        <p>Sistemas Integrados de Gestion: ISO9001:2015, 27001, entre otras</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p5.png" alt="">
+                    <div class="overlay">
+                        <h3>Creatividad en Informes</h3>
+                        <p>Metodologías DAFP para la estructuración de informes</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p6.png" alt="">
+                    <div class="overlay"> 
+                        <h3>Gobierno Digital</h3>
+                        <p>Estrategias ITA y Arquitectura Empresarial</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!--SECCION DE CONTACTO-->
+    <section class="contacto" id="contacto">
+        <div class="contenido-seccion">
+            <h2>Contactar al Funcionario</h2>
+            <div class="fila">
+                <!--Formulario de Contacto-->
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número Telefónico">
+                    <input type="text" placeholder="Dirección de Correo Institucional">
+                    <input type="text" placeholder="Asunto">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Ennviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!--Mapa-->
+                <div class="col">
+                    <img src="img/ubicacion.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Manizales, Caldas - Colombia
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Extención Oficina: 12345
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: lider.calidad@manizales.gov.co
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--PIE DE PAGINA-->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.facebook.com" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.twitter.com" title="Twitter"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.skype.com" title="Skype"><i class="fa-brands fa-skype"></i></a>
+            <a href="https://www.linkedin.com" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://www.rss.com" title="RSS"><i class="fa-solid fa-rss"></i></a>    
+        </div>
+        <div class="autores">
+            <h2>EQUIPO: Andres Felipe Fonseca Ochoa - Carlos Sebastian Gómez Carrillo</h2>
+            <h3>ASIGNATURA: Lenguajes de Internet - Taller Etapa de Transferencia</h3>
+            <h4>Corporación Universitaria COMPENSAR - Ingeniería de Software</h4>
+            <h5>Vigencia 2024 - Todos los Derechos Reservados</h5>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
